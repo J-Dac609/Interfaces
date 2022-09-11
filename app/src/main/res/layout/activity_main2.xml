@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="habilitarchek"
+    android:orientation="vertical"
+    tools:context=".MainActivity2">
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginBottom="621dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/Name"
+        android:inputType="textPersonName"
+        tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editTextTextPersonName"
+        android:layout_alignBottom="@+id/editTextTextPersonName"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="-46dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/last_name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editTextTextPersonName2"
+        android:layout_marginBottom="-47dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/date_born"
+        android:inputType="date"
+        android:minHeight="48dp"
+        android:textColorHint="#757575" />
+
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editTextTextPersonName2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="229dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="-45dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/age"
+        android:inputType="number"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="408dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editTextDate"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="206dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="-59dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/enter_email2"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:textColorHint="#757575" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editTextTextEmailAddress"
+        android:layout_alignBottom="@+id/editTextTextEmailAddress"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginEnd="-4dp"
+        android:layout_marginBottom="-42dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/password2"
+        android:inputType="textPassword"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editTextTextPassword"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="-1dp"
+        android:layout_marginBottom="-45dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/confirm_password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textColorHint="#757575" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignBottom="@+id/checkBox2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="-45dp"
+        android:entries="@array/Sexo"
+        android:spinnerMode="dropdown" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="213dp"
+        android:layout_height="80dp"
+        android:layout_alignBottom="@+id/spinner"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="98dp"
+        android:layout_marginEnd="99dp"
+        android:layout_marginBottom="-85dp"
+        android:onClick="Volver"
+        android:text="@string/Return" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="223dp"
+        android:layout_height="63dp"
+        android:layout_alignBottom="@+id/editTextTextPassword2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="99dp"
+        android:layout_marginEnd="89dp"
+        android:layout_marginBottom="-67dp"
+        android:checked="false"
+        android:onClick="habilitarchek"
+        android:text="@string/contrase_a" />
+
+
+</RelativeLayout>

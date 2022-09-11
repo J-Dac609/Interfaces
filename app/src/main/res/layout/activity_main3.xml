@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="20000dp"
+    android:padding="16dp"
+    android:stretchColumns="1">
+
+    <TableRow android:background="#2196F3">
+
+        <TextView
+            android:layout_column="0"
+            android:padding="3dip"
+            android:text="@string/Usuario"
+            android:textColor="#212121" />
+
+        <TextView
+            android:layout_column="1"
+            android:padding="3dip"
+            android:text="@string/Datos_del_usuario"
+            android:textColor="#212121" />
+    </TableRow>
+
+    <TableRow android:layout_height="48dp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="177dp"
+            android:layout_height="114dp"
+            app:srcCompat="@drawable/ic__084899"
+            android:contentDescription="@string/todo" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="86dp"
+            android:onClick="Seguir"
+            android:text="@string/Continue" />
+
+    </TableRow>
+
+    <TableRow android:background="#2196F3">
+
+        <TextView
+            android:layout_column="0"
+            android:padding="3dip"
+            android:text="@string/Usuario2"
+            android:textColor="#212121" />
+
+        <TextView
+            android:layout_column="1"
+            android:padding="3dip"
+            android:text="@string/datos_del_usuario"
+            android:textColor="#212121" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_column="0"
+            android:padding="3dip"
+            android:text="@string/juan_diego_acosta" />
+        <TextView
+            android:layout_column="1"
+            android:padding="3dip"
+            android:text="@string/edad_20_a_os" />
+    </TableRow>
+
+    <TableRow>
+    <TextView
+        android:layout_column="0"
+        android:padding="3dip"
+        android:text="@string/Estado_civil2" />
+    <TextView
+        android:layout_column="1"
+        android:padding="3dip"
+        android:text="@string/Soltero" />
+</TableRow>
+    <TableRow>
+        <TextView
+            android:layout_column="0"
+            android:padding="3dip"
+            android:text="@string/correo_electronico" />
+        <TextView
+            android:layout_column="1"
+            android:padding="3dip"
+            android:text="@string/jdacostac_libertadores_edu_co" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_column="0"
+            android:padding="3dip"
+            android:text="@string/fecha_de_nacimiento" />
+        <TextView
+            android:layout_column="1"
+            android:padding="3dip"
+            android:text="@string/_28_07_2001" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_column="0"
+            android:padding="3dip"
+            android:text="@string/ocupacion" />
+        <TextView
+            android:layout_column="1"
+            android:padding="3dip"
+            android:text="@string/estudiante" />
+    </TableRow>
+
+</TableLayout>
+
+

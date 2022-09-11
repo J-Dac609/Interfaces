@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="radiobutton2">RadioButton</string>
+    <string name="confirm_password">confirm Password</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="todo2">TODO</string>
+</resources>

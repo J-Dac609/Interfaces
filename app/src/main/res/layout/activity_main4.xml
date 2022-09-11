@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Enviar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity4">
+
+    <TextView
+        android:id="@+id/llamadaEnt"
+        android:layout_width="409dp"
+        android:layout_height="114dp"
+        android:text="@string/Llamada"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="166dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:contentDescription="@string/todo2"
+        app:layout_constraintStart_toStartOf="@+id/llamadaEnt"
+        app:layout_constraintTop_toBottomOf="@+id/llamadaEnt"
+        app:srcCompat="@android:drawable/ic_menu_call"
+        tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck,DuplicateSpeakableTextCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="166dp"
+        android:layout_height="48dp"
+        android:contentDescription="@string/Todo"
+        app:layout_constraintEnd_toEndOf="@+id/llamadaEnt"
+        app:layout_constraintHorizontal_bias="0.145"
+        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        app:layout_constraintTop_toBottomOf="@+id/llamadaEnt"
+        app:srcCompat="@android:drawable/ic_delete"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="411dp"
+        android:layout_height="93dp"
+        android:text="@string/textview5"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="@+id/llamadaEnt"
+        app:layout_constraintStart_toStartOf="@+id/llamadaEnt"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2" />
+
+    <Switch
+        android:id="@+id/resMensaje"
+        android:layout_width="377dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/responder"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView5"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="414dp"
+        android:layout_height="79dp"
+        android:text="@string/textview6"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/llamadaEnt"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/resMensaje" />
+
+    <RadioGroup
+        android:id="@+id/grupoDimension"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView6">
+
+        <RadioButton
+            android:id="@+id/radioButton6"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/peque_o" />
+
+        <RadioButton
+            android:id="@+id/radioButton7"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/mediano" />
+
+        <RadioButton
+            android:id="@+id/radioButton8"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/grande" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="160dp"
+        android:layout_height="84dp"
+        android:onClick="Final"
+        android:text="@string/button6"
+        app:layout_constraintEnd_toEndOf="@+id/grupoDimension"
+        app:layout_constraintHorizontal_bias="0.554"
+        app:layout_constraintStart_toStartOf="@+id/grupoDimension"
+        app:layout_constraintTop_toBottomOf="@+id/grupoDimension" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
